@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <nav>
+        <ul class="Menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#  ">SOBRE</a></li>
+            <li><a href="#">SERVIÇOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>  
+    </nav>
+    <nav class="pedro">
+        <h1>Orçamentação Remota</h1>
+        <img src=".." width="600px">
+        <p>Faça o orçamento pelo celular</p>
+    </nav>
+</body>
+</html>

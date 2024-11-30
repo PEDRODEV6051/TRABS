@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque - Gerenciamento via Web</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS principal -->
+    <link rel="stylesheet" href="gerenciamento_web.css"> <!-- CSS específico da página -->
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <div class="flex">
+            <nav>
+                <ul>
+                    <li class="nav"><a class="outline" href="/Users/user/Downloads/site (1) (2)/site (1)/site/index.html">HOME</a></li>
+                    <li class="nav"><a href="/Users/user/Downloads/site (1) (2)/site (1)/site/subpaginas2/sobre.html" class="outline">SOBRE</a></li>
+                    <li class="nav"><a href="/Users/user/Downloads/site (1) (2)/site (1)/site/subpaginas3/index.html">SERVIÇOS</a></li>
+                    <li class="nav"><a href="/Users/user/Downloads/site (1) (2)/site (1)/site/subpaginas/contato.html" class="outline">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Gerenciamento via Web</h1>
+        <p>Com o gerenciamento via web, você pode acompanhar e controlar o estoque em tempo real, de qualquer lugar e a qualquer hora. Nosso sistema oferece segurança e flexibilidade para o seu negócio.</p>
+        
+        <!-- Formulário de contato para orçamento -->
+        <form action="processar_orcamento_gerenciamento.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="descricao">Descrição do Projeto:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <input type="submit" value="Solicitar Orçamento">
+        </form>
+        
+        <!-- Botão de Voltar -->
+        <div class="back-button">
+            <a href="../index.html" class="button">Voltar para Serviços</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Movimentação de Material</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controle_material.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <div class="flex">
+            <nav>
+                <ul>
+                    <li class="nav"><a class="outline" href="/Users/user/Downloads/site (1) (2)/site (1)/site/index.html">HOME</a></li>
+                    <li class="nav"><a href="/Users/user/Downloads/site (1) (2)/site (1)/site/subpaginas2/sobre.html" class="outline">SOBRE</a></li>
+                    <li class="nav"><a href="../index.html">SERVIÇOS</a></li>
+                    <li class="nav"><a href="/Users/user/Downloads/site (1) (2)/site (1)/site/subpaginas/contato.html" class="outline">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <h1>Controle de Movimentação de Material</h1>
+    <p>Aqui você pode gerenciar e acompanhar o fluxo de materiais, garantindo um controle eficiente em cada etapa do processo.</p>
+    
+    <form action="processar_controle_material.php" method="POST">
+        <label for="nome">Nome do Responsável:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="material">Descrição do Material:</label>
+        <textarea id="material" name="material" rows="4" required></textarea>
+
+        <input type="submit" value="Solicitar Controle">
+    </form>
+
+    <!-- Botão de Voltar -->
+    <div class="back-button">
+        <a href="../index.html" class="button">Voltar</a>
+    </div>
+</body>
+</html>

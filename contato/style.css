@@ -1,0 +1,159 @@
+.contato input[type='nome'] {
+    padding: 3px 280px 10px 0;
+  }
+  
+.contato input[type='email'] {
+      padding: 3px 280px 10px 0;
+      margin-top: 7px;
+    }
+  
+.contato input[type='assunto'] {
+      padding: 3px 52px 10px 0;
+      margin-top: 7px;
+    }
+  
+.contato input[type='telefone'] {
+      padding: 3px 52px 10px 0;
+      margin-top: 7px;
+      margin-left: 5px;
+    } 
+  
+.btn {
+      border-radius: 6px;
+      padding: 2px 2px;
+      background: rgb(168, 195, 191);
+      border: none;
+      margin-left: 10px;
+      margin-top: 10px;
+      color: black;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translate(-120%, 100%);
+    }
+  
+.contato textarea {
+      margin-top: 10px;
+  
+    }
+  
+.contato {
+      margin-left: 720px;
+      margin-top: 50px;
+   }
+  
+.card img {
+      width: 60px;
+      height: 60px;
+      margin-top: 10px;
+      margin-left: 20px;
+  }
+  
+.card {
+      background-color: rgb(245, 245, 245);
+  }
+  
+.endereço {
+      margin-top: -250px;
+      width: 400px;
+      height: 10px;
+  }
+h3 {
+      text-align: center;
+      font-size: 16px;
+      position: relative;
+      top: -60px;
+      color: black;
+      font-size: 20px;
+  }
+  
+  
+.card p {
+      text-align: center;
+      margin-left: -10px;
+      font-size: 14px;
+      margin-top: -10px;
+      position: relative;
+      top: -40px;
+      color: black;
+      text-align: center;
+      font-size:large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      font-size: 15px;
+  }
+  
+  
+.telefone img {
+      width: 10px;
+      height: 12px;
+      margin-left: 130px;
+      position: relative;
+      top: -32px;
+  }
+
+.testimonials {
+    margin-left: 300px;
+    margin-top: 42px;
+}
+
+.contato1 {
+    margin-top: 1000px;
+}
+
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;  
+    font-size:larger;
+    font-style:oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Menu{ 
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin-left: 100px;
+    align-items: center;
+}
+
+nav {
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    height: 70px;
+    margin-left: auto;
+    padding: 0 600px;
+
+}
+
+body {
+  background: linear-gradient(72deg, #3DEBB0 1%, #8956f3 99%);    
+  margin-top: 0;
+  margin-left: 0;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size:large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+ul {
+  margin-left: 200px;
+  transform: translate(-50%, 0%);
+}
+

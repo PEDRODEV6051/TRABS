@@ -1,0 +1,164 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais para a página */
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956f3 99%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Menu de navegação */
+nav {
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    height: 70px;
+    display: flex;
+    justify-content: center;  /* Centralizando o menu */
+    align-items: center;
+    margin-top: -10px;
+    padding: 0 100px; /* Para estender a barra de navegação */
+}
+
+.Menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.Menu li {
+    margin: 0 20px;
+}
+
+.Menu li a {
+    color: black; /* Cor preta para o texto */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fonte igual à da página home */
+    transition: color 0.3s;
+}
+
+.Menu li a:hover {
+    color: #3DEBB0; /* Cor no hover, se preferir pode alterar */
+}
+
+/* Estilos do carrossel */
+.content {
+    width: 100%;
+    max-width: 935px; /* Mantendo o carrossel limitado a um tamanho máximo */
+    height: 520px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto; /* Centralizando horizontalmente e ajustando espaçamento superior */
+    position: relative;
+}
+
+/* Barras de navegação do carrossel */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.bar:hover {
+    background-color: rgb(138, 46, 30);
+}
+
+/* Escondendo os inputs de controle do carrossel */
+input {
+    display: none;
+}
+
+/* Configurando slides */
+.slides {
+    display: flex;
+    width: 700%;
+    height: 100%;
+    transition: margin-left 0.6s;
+}
+
+.slide {
+    width: 14.2857%; /* 100% dividido por 7 slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Movendo os slides com base nos botões de rádio */
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -14.2857%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -28.5714%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -42.8571%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -57.1428%;
+}
+
+#slide6:checked ~ .s1 {
+    margin-left: -71.4285%;
+}
+
+#slide7:checked ~ .s1 {
+    margin-left: -85.7142%;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .content {
+        width: 90%; /* O carrossel se ajusta a 90% da largura da tela */
+        height: auto; /* Altura automática para ajustar o tamanho das imagens */
+    }
+
+    .slides {
+        width: 700%; /* Continuar permitindo os slides se ajustarem */
+    }
+
+    .slide {
+        width: 14.2857%; /* Mantém a proporção entre os slides */
+    }
+
+    nav {
+        padding: 0 15px; /* Menor espaçamento nas laterais em telas pequenas */
+    }
+
+    .Menu {
+        flex-direction: column; /* Empilhar links verticalmente */
+        align-items: center;
+    }
+
+    .Menu li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    }
+}

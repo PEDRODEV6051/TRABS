@@ -1,0 +1,150 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956f3 99%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; 
+    padding-top: 80px; /* Evita sobreposição com a navbar fixa */
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    height: 70px; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Título */
+h1, h2 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo do formulário principal */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 30px; /* Adiciona espaço abaixo da navbar */
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campos do formulário */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+form input:focus {
+    border-color: #8956f3;
+    outline: none;
+    background: #ffffff;
+}
+
+/* Botão */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: #3DEBB0;
+}
+
+/* Links adicionais */
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

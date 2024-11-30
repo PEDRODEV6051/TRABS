@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956f3 99%);
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+/* Estilo do título e parágrafo */
+h1 {
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 20px 30px;
+    line-height: 1.6;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #3DEBB0; /* Cor no hover */
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button .button {
+    background: linear-gradient(72deg, #8956f3 1%, #3DEBB0 99%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none; /* Remove sublinhado do link */
+    display: inline-block; /* Para o botão de voltar */
+}
+
+.back-button .button:hover {
+    background: #3DEBB0; /* Cor no hover */
+}

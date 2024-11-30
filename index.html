@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="Menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="sobre/sobre.html">SOBRE</a></li>
+                <li><a href="contato/contato.html">CONTATO</a> <img src="./IMG/Flag_of_Brazil.svg.png" alt="Bandeira do Brasil" class="bandeira"></li>
+            </ul>
+        </nav>
+        <h1>Aqui você encontra a solução para todos os seus problemas!</h1>
+    </header>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit">Entrar</button>
+
+                <div class="login-links">
+                    <a href="./home/senha/esqueceu_senha.html">Esqueceu a senha?</a> 
+                    <a href="./home/index.html">Cadastrar-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Adiciona um evento ao formulário de login
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Impede o envio tradicional do formulário
+
+            // Aqui você pode colocar a validação do login (por exemplo, comparar com dados armazenados)
+
+            // Simulação de login bem-sucedido (exemplo simples)
+            var usuario = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
+
+            if (usuario === "usuarioExemplo" && senha === "senhaExemplo") {
+                // Se o login for bem-sucedido, armazena a informação de login no sessionStorage
+                sessionStorage.setItem('usuarioLogado', 'true');
+
+                // Redireciona para a página de Serviços após login bem-sucedido
+                window.location.href = "file:///C:/xampp/htdocs/site/servi%C3%A7os/index.html";
+            } else {
+                // Caso o login falhe, exibe um alerta
+                alert("Usuário ou senha incorretos.");
+            }
+        });
+    </script>
+
+</body>
+</html>
